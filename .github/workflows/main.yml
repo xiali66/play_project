@@ -14,5 +14,5 @@ jobs:
             node-version: '20.11.1'
         - run: echo '发布'
         - run: npm install
-        - run: npm run bulid
+        - run: npm run dev
   
