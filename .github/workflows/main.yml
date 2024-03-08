@@ -6,7 +6,7 @@ on:
 
 jobs:
     release-job：
-      runs-on: ubuntu-latest
+      runs-on: ubuntu-20.04
       steps: # 步骤
         - uses: actions/checkout@master # 使用公共的 action
         - uses: actions/setup-node@v4.0.2
