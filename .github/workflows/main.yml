@@ -5,8 +5,8 @@ on:
     branches: master # master 分支提交时触发
 
 jobs:
-    release-job：
-      runs-on: ubuntu-20.04
+    my-job:
+      runs-on: ubuntu-latest
       steps: # 步骤
         - uses: actions/checkout@master # 使用公共的 action
         - uses: actions/setup-node@v4.0.2
