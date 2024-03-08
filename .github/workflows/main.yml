@@ -1,0 +1,16 @@
+name: release
+
+on:
+  push:
+    branches: master # master 分支提交时触发
+
+jobs:
+    release-job：
+      runs-on: ubuntu-latest
+      steps: # 步骤
+        - uses: actions/checkout@master # 使用公共的 action
+        - uses: actions/setup-node@v4.0.2
+          with: 
+            node-version: '20.11.1'
+        - run: echo '发布'
+  
